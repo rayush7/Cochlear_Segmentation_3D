@@ -16,6 +16,10 @@ Create 3 folders `nnUNet_raw_data_base`, `nnUNet_preprocessed`, `nnUNet_results`
 
 Ensure the `Task001_Cochlea` is defined for cochlear and directory structure follows nnUNet conventions.
 
+nnUNet_raw_data_base/nnUNet_raw_data/
+├── Task001_Cochlea
+├── ...
+
 ```bash
 export nnUNet_raw_data_base="/home/ayushrai/Image_Segmentation_3D/nnUNet_raw_data_base"
 export nnUNet_preprocessed="/home/ayushrai/Image_Segmentation_3D/nnUNet_preprocessed"
