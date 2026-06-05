@@ -6,6 +6,7 @@ Go through documentation of nnUNetv1 : https://github.com/MIC-DKFZ/nnUNet/tree/n
 
 # Directions
 Install nnUNetv1 : https://github.com/MIC-DKFZ/nnUNet 
+Install the python environment using ```environment.yml``` 
 
 ---
 
