@@ -75,17 +75,19 @@ nnUNet_train 3d_fullres nnUNetTrainerV2 1 1 --npz
 
 # Inference
 
-## Standard Prediction
+## Fold 1 Prediction
 
 ```bash
 nnUNet_predict \
 -i /home/ayushrai/Image_Segmentation_3D/nnUNet_raw_data_base/nnUNet_raw_data/Task001_Cochlea/imagesTs/ \
--o /home/ayushrai/Image_Segmentation_3D/nnUNet_results/ \
+-o /home/ayushrai/Image_Segmentation_3D/nnUNet_results/nnUNet/3d_fullres/Task001_Cochlea/nnUNetTrainerV2__nnUNetPlansv2.1/fold_1/ \
 -t 1 \
 -m 3d_fullres \
 -chk model_best \
 -f 1
 ```
+
+---
 
 ## Fold 5 Prediction
 
@@ -99,27 +101,13 @@ nnUNet_predict \
 -f 5
 ```
 
-## Fold 1 Prediction
-
-```bash
-nnUNet_predict \
--i /home/ayushrai/Image_Segmentation_3D/nnUNet_raw_data_base/nnUNet_raw_data/Task001_Cochlea/imagesTs/ \
--o /home/ayushrai/Image_Segmentation_3D/nnUNet_results/nnUNet/3d_fullres/Task001_Cochlea/nnUNetTrainerV2__nnUNetPlansv2.1/fold_1/ \
--t 1 \
--m 3d_fullres \
--chk model_best \
--f 1
-```
+---
 
 ## Dense Volume Prediction
 
 ```bash
 nnUNet_predict -i dense/ -o dense_pred/ -t 1 -m 3d_fullres -chk model_best -f 1
 ```
-
-### Reference
-
-https://github.com/MIC-DKFZ/nnUNet/blob/nnunetv1/documentation/inference_example_Prostate.md
 
 ---
 
@@ -147,3 +135,11 @@ Ensure the prediction are stored in ```3d_fullres_exp/dense_pred``` folder.
 ```bash
 python visualise.py
 ```
+
+---
+
+### Reference
+
+https://github.com/MIC-DKFZ/nnUNet/blob/nnunetv1/documentation/inference_example_Prostate.md
+
+---
