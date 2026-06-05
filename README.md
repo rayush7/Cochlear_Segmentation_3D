@@ -5,8 +5,7 @@ Go through documentation of nnUNetv1
 ---
 
 # Directions
-
-## Install nnUNetv1
+Install nnUNetv1 : https://github.com/MIC-DKFZ/nnUNet 
 
 ---
 
