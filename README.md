@@ -137,9 +137,3 @@ python visualise.py
 ```
 
 ---
-
-### Reference
-
-https://github.com/MIC-DKFZ/nnUNet/blob/nnunetv1/documentation/inference_example_Prostate.md
-
----
