@@ -1,6 +1,6 @@
 # 🦻 3D Segmentation of Cochlear Implants using nnUNet
 
-Go through documentation of nnUNetv1
+Go through documentation of nnUNetv1 : https://github.com/MIC-DKFZ/nnUNet/tree/nnunetv1/documentation 
 
 ---
 
