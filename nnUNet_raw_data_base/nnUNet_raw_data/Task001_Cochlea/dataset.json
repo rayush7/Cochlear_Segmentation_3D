@@ -1,0 +1,45 @@
+{
+    "name": "CochleaFibrosis",
+    "description": "OCT Cochlea Segmentation",
+    "tensorImageSize": "3D",
+    "modality": {
+        "0": "OCT"
+    },
+    "labels": {
+        "0": "background",
+        "1": "class1",
+        "2": "class2",
+        "3": "class3"
+    },
+    "numTraining": 5,
+    "numTest": 5,
+    "training": [
+        {
+            "image": "./imagesTr/OCTV1L_000.nii.gz",
+            "label": "./labelsTr/OCTV1L_000.nii.gz"
+        },
+        {
+            "image": "./imagesTr/OCTV7L_001.nii.gz",
+            "label": "./labelsTr/OCTV7L_001.nii.gz"
+        },
+        {
+            "image": "./imagesTr/OCTV9L_002.nii.gz",
+            "label": "./labelsTr/OCTV9L_002.nii.gz"
+        },
+        {
+            "image": "./imagesTr/OCTV10L_003.nii.gz",
+            "label": "./labelsTr/OCTV10L_003.nii.gz"
+        },
+        {
+            "image": "./imagesTr/OCTV11L_004.nii.gz",
+            "label": "./labelsTr/OCTV11L_004.nii.gz"
+        }
+    ],
+    "test": [
+        "./imagesTs/OCTV1L_000.nii.gz",
+        "./imagesTs/OCTV7L_001.nii.gz",
+        "./imagesTs/OCTV9L_002.nii.gz",
+        "./imagesTs/OCTV10L_003.nii.gz",
+        "./imagesTs/OCTV11L_004.nii.gz"
+    ]
+}
