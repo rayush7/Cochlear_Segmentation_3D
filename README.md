@@ -12,7 +12,7 @@ Install the python environment using ```environment.yml```
 
 # Export Paths
 
-Create 3 folders `nnUNet_raw_data_base`, `nnUNet_preprocessed`, `nnUNet_results` and export following paths.
+Create 3 folders `nnUNet_raw_data_base`, `nnUNet_preprocessed`, `nnUNet_results`.
 
 Ensure the `Task001_Cochlea` is defined for cochlear and directory structure follows nnUNet conventions.
 
@@ -20,6 +20,7 @@ Ensure the `Task001_Cochlea` is defined for cochlear and directory structure fol
     ├── Task001_Cochlea
     ├── ...
 
+Export following paths.
 
 ```bash
 export nnUNet_raw_data_base="/home/ayushrai/Image_Segmentation_3D/nnUNet_raw_data_base"
