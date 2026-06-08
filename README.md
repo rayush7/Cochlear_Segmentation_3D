@@ -61,7 +61,7 @@ print(data.shape)
 # Verify Dataset
 
 ```bash
-nnUNet_plan_and_preprocess -t 2 --verify_dataset_integrity
+nnUNet_plan_and_preprocess -t 1 --verify_dataset_integrity
 ```
 
 ---
@@ -102,14 +102,6 @@ nnUNet_predict \
 -m 3d_fullres \
 -chk model_best \
 -f 5
-```
-
----
-
-## Dense Volume Prediction
-
-```bash
-nnUNet_predict -i dense/ -o dense_pred/ -t 1 -m 3d_fullres -chk model_best -f 1
 ```
 
 ---
