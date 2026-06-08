@@ -5,6 +5,9 @@ Go through documentation of nnUNetv1 : https://github.com/MIC-DKFZ/nnUNet/tree/n
 ---
 
 # Directions
+- Python : 3.11.5
+- Pytorch : 2.7.1+cu118
+
 Install nnUNetv1 : https://github.com/MIC-DKFZ/nnUNet 
 Install the python environment using ```environment.yml``` 
 
@@ -23,9 +26,9 @@ Ensure the `Task001_Cochlea` is defined for cochlear and directory structure fol
 Export following paths.
 
 ```bash
-export nnUNet_raw_data_base="/home/ayushrai/Image_Segmentation_3D/nnUNet_raw_data_base"
-export nnUNet_preprocessed="/home/ayushrai/Image_Segmentation_3D/nnUNet_preprocessed"
-export RESULTS_FOLDER="/home/ayushrai/Image_Segmentation_3D/nnUNet_results"
+export nnUNet_raw_data_base="~/Cochlear_Segmentation_3D/nnUNet_raw_data_base"
+export nnUNet_preprocessed="~/Cochlear_Segmentation_3D/nnUNet_preprocessed"
+export RESULTS_FOLDER="~/Cochlear_Segmentation_3D/nnUNet_results"
 ```
 
 ---
@@ -79,8 +82,8 @@ nnUNet_train 3d_fullres nnUNetTrainerV2 1 1 --npz
 
 ```bash
 nnUNet_predict \
--i /home/ayushrai/Image_Segmentation_3D/nnUNet_raw_data_base/nnUNet_raw_data/Task001_Cochlea/imagesTs/ \
--o /home/ayushrai/Image_Segmentation_3D/nnUNet_results/nnUNet/3d_fullres/Task001_Cochlea/nnUNetTrainerV2__nnUNetPlansv2.1/fold_1/ \
+-i ~/Cochlear_Segmentation_3D/nnUNet_raw_data_base/nnUNet_raw_data/Task001_Cochlea/imagesTs/ \
+-o ~/Cochlear_Segmentation_3D/nnUNet_results/nnUNet/3d_fullres/Task001_Cochlea/nnUNetTrainerV2__nnUNetPlansv2.1/fold_1/ \
 -t 1 \
 -m 3d_fullres \
 -chk model_best \
@@ -93,8 +96,8 @@ nnUNet_predict \
 
 ```bash
 nnUNet_predict \
--i /home/ayushrai/Image_Segmentation_3D/nnUNet_raw_data_base/nnUNet_raw_data/Task001_Cochlea/imagesTs/ \
--o /home/ayushrai/Image_Segmentation_3D/nnUNet_results/nnUNet/3d_fullres/Task001_Cochlea/nnUNetTrainerV2__nnUNetPlansv2.1/fold_5/ \
+-i ~/Cochlear_Segmentation_3D/nnUNet_raw_data_base/nnUNet_raw_data/Task001_Cochlea/imagesTs/ \
+-o ~/Cochlear_Segmentation_3D/nnUNet_results/nnUNet/3d_fullres/Task001_Cochlea/nnUNetTrainerV2__nnUNetPlansv2.1/fold_5/ \
 -t 1 \
 -m 3d_fullres \
 -chk model_best \
