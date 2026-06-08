@@ -8,7 +8,7 @@ Go through documentation of nnUNetv1 : https://github.com/MIC-DKFZ/nnUNet/tree/n
 - Python : 3.11.5
 - Pytorch : 2.7.1+cu118
 
-Install nnUNetv1 : https://github.com/MIC-DKFZ/nnUNet 
+Install nnUNetv1 : https://github.com/MIC-DKFZ/nnUNet.   
 Install the python environment using ```environment.yml``` 
 
 ---
